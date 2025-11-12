@@ -57,3 +57,6 @@ php artisan key:generate
 php artisan migrate
 php artisan serve
 http://localhost:8000
+
+![index](images/index.jpg)
+
