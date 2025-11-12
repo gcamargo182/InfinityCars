@@ -46,17 +46,17 @@ Antes de começar, verifique se possui:
    ```bash
    git clone https://github.com/gcamargo182/InfinityCars.git
    cd InfinityCars
-composer install
-npm install && npm run dev
-DB_DATABASE=infinitycars
-DB_DATABASE=infinitycars
-DB_USERNAME=root
-DB_PASSWORD=
-Copy-Item .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan serve
-http://localhost:8000
+   composer install
+   npm install && npm run dev
+   DB_DATABASE=infinitycars
+   DB_DATABASE=infinitycars
+   DB_USERNAME=root
+   DB_PASSWORD=
+   Copy-Item .env.example .env
+   php artisan key:generate
+   php artisan migrate
+   php artisan serve
+   http://localhost:8000
 
 ## 🖥️ Telas do Sistema
 
