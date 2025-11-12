@@ -60,6 +60,5 @@ http://localhost:8000
 
 Markdown
 
-![index](InfinityCars/public
-/images/index.jpg)
+![index](public/images/index.jpg)
 
