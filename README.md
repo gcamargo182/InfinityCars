@@ -63,5 +63,14 @@ http://localhost:8000
 <p align="center">
   <img src="public/images/index.JPG" width="400"/>
   <img src="public/images/carddeinformaçõesdocarronoindex.JPG" width="400"/>
+  <img src="public/images/cadastrousuarioadministrador.JPG" width="400"/>
+  <img src="public/images/login.JPG" width="400"/>
+  <img src="public/images/telaadministrador.JPG" width="400"/>
+  <img src="public/images/menulateral.JPG" width="400"/>
+  <img src="public/images/gestaodecores.JPG" width="400"/>
+  <img src="public/images/gestaodemarcas.JPG" width="400"/>
+  <img src="public/images/gestaodetiposdeveiculos.JPG" width="400"/>
+  <img src="public/images/gestaodemodelos.JPG" width="400"/>
+  <img src="public/images/gestaodeveiculos.JPG" width="400"/>
 </p>
 
