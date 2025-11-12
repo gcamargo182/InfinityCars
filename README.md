@@ -58,15 +58,10 @@ php artisan migrate
 php artisan serve
 http://localhost:8000
 
-![index](public/images/index.JPG)
-![carddeinformaçõesdocarronoindex](public/images/carddeinformaçõesdocarronoindex.JPG)
-![cadastrousuarioadministrador](public/images/cadastrousuarioadministrador.JPG)
-![login](public/images/login.JPG)
-![telaadministrador](public/images/telaadministrador.JPG)
-![menulateral](public/images/menulateral.JPG)
-![gestaodecores](public/images/gestaodecores.JPG)
-![gestaodemarcas](public/images/gestaodemarcas.JPG)
-![gestaodetiposdeveiculos](public/images/gestaodetiposdeveiculos.JPG)
-![gestaodemodelos](public/images/gestaodemodelos.JPG)
-![gestaodeveiculos](public/images/gestaodeveiculos.JPG)
+## 🖥️ Telas do Sistema
+
+<p align="center">
+  <img src="public/images/index.JPG" width="400"/>
+  <img src="public/images/carddeinformaçõesdocarronoindex.JPG" width="400"/>
+</p>
 
