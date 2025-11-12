@@ -61,4 +61,5 @@ http://localhost:8000
 Markdown
 
 ![index](public/images/index.JPG)
+![cadastro usuario administrador](public/images/cadastro usuario administrador.JPG)
 
