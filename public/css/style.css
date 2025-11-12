@@ -1,0 +1,601 @@
+/* Previne reflow em toda a página */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.header-infinitycars {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 999;
+}
+
+.header-infinitycars h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-logo {
+    height: 90px;
+    width: auto;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+    filter: brightness(1);
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 40px;
+        max-width: 150px;
+    }
+}
+
+.header-login-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.header-login-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    position: relative;
+}
+
+.header-login-icon:hover {
+    background-color: #1e90ff;
+    color: #ffffff;
+    will-change: auto;
+}
+
+/* Header */
+
+/* Body */
+
+.bd-infinitycars {
+    font-family: Arial, sans-serif;
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    background-color: #6b7280 !important;
+    padding: 40px 0 80px 0;
+    overflow-y: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000 !important;
+}
+
+.main-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000 !important;
+}
+
+.login-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000 !important;
+}
+
+.link-login {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    max-width: 300px;
+}
+
+.btn-login:hover {
+    background-color: #0069d9;
+    color: #000000;
+}
+
+.btn-voltar {
+    background-color: #facc15;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    max-width: 300px;
+}
+
+.btn-voltar:hover {
+    background-color: #eab308;
+    color: #000000;
+}
+
+.register-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000 !important;
+}
+
+.btn-register {
+    background-color: #007bff;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    max-width: 300px;
+}
+
+.btn-register:hover {
+    background-color: #0069d9;
+    color: #000000;
+}
+
+.btn-sair {
+    background-color: #e10600;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    max-width: 300px;
+}
+
+.btn-sair:hover {
+    background-color: #b80000;
+    color: #000000;
+}
+
+.username-login {
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+/* .header-user .username-login span {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.header-user .username-login span:hover {
+  color: #1e90ff;
+  will-change: auto;
+  text-decoration: underline;
+} */
+
+/* Cards Grid */
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+    .md\\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.hover\\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.transition-shadow {
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+/* Navbar Lateral */
+.navbar-lateral {
+    position: fixed;
+    top: 100px; /* Abaixo do header */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 160px); /* Total height minus header and footer */
+    /* background-color: #ffffff; */
+    padding: 20px 0;
+    overflow-y: auto;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .sidebar-heading {
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0;
+} */
+
+/* .navbar-lateral .nav-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+} */
+
+/* .navbar-lateral .nav-link:hover {
+  color: #ffffff;
+  background-color: #007bff;
+} */
+
+/* .navbar-lateral .nav-link i {
+  margin-right: 0.5rem;
+  width: 16px;
+  text-align: center;
+} */
+
+/* .sidebar-divider {
+  border: 0;
+  height: 1px;
+  background-color: #495057;
+  margin: 1rem 0;
+} */
+
+/* Ajuste do conteúdo principal quando navbar lateral está presente */
+/* .main-content.with-sidebar {
+  margin-left: 250px;
+} */
+
+/* Footer */
+
+.footer-infinitycars {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-infinitycars p {
+    margin: 0;
+}
+
+/* Footer */
+
+/* Menu Lateral */
+
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+.menu,
+.menu-bar {
+    position: fixed;
+    top: 100px; /* Começa abaixo do header */
+    left: 0;
+    height: calc(100vh - 100px); /* Altura total menos o header */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+}
+.menu li a {
+    display: inline-block;
+    text-indent: -500em;
+    height: 5em;
+    width: 5em;
+    line-height: 5em;
+    text-align: center;
+    color: #007bff;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+}
+.menu li a:before {
+    font-family: FontAwesome;
+    speak: none;
+    text-indent: 0em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+}
+.menu li a.search:before {
+    content: "\f002";
+}
+.menu li a.archive:before {
+    content: "\f187";
+}
+.menu li a.pencil:before {
+    content: "\f040";
+}
+.menu li a.contact:before {
+    content: "\f003";
+}
+.menu li a.about:before {
+    content: "\f007";
+}
+.menu li a.home:before {
+    content: "\f039";
+}
+.menu-bar li a:hover,
+.menu li a:hover,
+.menu li:first-child a {
+    background: #007bff;
+    color: #ffffff;
+}
+.menu-bar {
+    overflow: hidden;
+    left: 5em;
+    top: 100px; /* Mesmo nível do menu principal */
+    z-index: 5;
+    width: 0;
+    height: 0;
+    transition: all 0.1s ease-in-out;
+}
+.menu-bar li a {
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    position: relative;
+    font-family: verdana;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+}
+.menu-bar li:first-child a {
+    height: 5em;
+    background: #007bff;
+    color: #ffffff;
+    line-height: 5;
+}
+
+.para {
+    color: #007bff;
+    padding-left: 100px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.menu-bar.open {
+    width: 14em !important;
+    height: 100% !important;
+}
+
+/* Backup - regra genérica também */
+.open {
+    width: 14em;
+    height: 100%;
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        margin-top: 100px;
+    }
+    .menu {
+        height: 5em;
+        width: 100%;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu-bar li a {
+        width: 100%;
+    }
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 0;
+    }
+    .open {
+        width: 100%;
+        height: auto;
+    }
+    .para {
+        padding-left: 5px;
+    }
+}
+@media screen and (max-height: 34em) {
+    .menu li,
+    .menu-bar {
+        font-size: 70%;
+    }
+}
+@media screen and (max-height: 34em) and (max-width: 500px) {
+    .menu {
+        height: 3.5em;
+    }
+}
+
+/* Menu Lateral */
+
+/* Detalhes Veiculos */
+.card-veiculo-detalhe {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.card-veiculo-fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.card-veiculo-foto-principal {
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.07);
+    background: #f8f8f8;
+}
+.card-veiculo-foto-extra {
+    max-width: 100%;
+    max-height: 120px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    background: #f8f8f8;
+}
+.card-veiculo-info h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.card-veiculo-info p {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+.card-veiculo-preco {
+    font-size: 1.4rem;
+    color: #198754;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.card-veiculo-descricao {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+.card-veiculo-voltar {
+    margin-top: 1rem;
+}
+
+.card-veiculo-fotos-extras {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 8px;
+}
+.card-veiculo-foto-extra {
+    max-width: 48%;
+    max-height: 120px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    background: #f8f8f8;
+    object-fit: contain;
+}
+/* Detalhes Veiculos */
