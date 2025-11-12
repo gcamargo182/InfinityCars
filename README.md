@@ -60,5 +60,5 @@ http://localhost:8000
 
 Markdown
 
-![index](images/index.jpg)
+![index](public/images/index.jpg)
 
