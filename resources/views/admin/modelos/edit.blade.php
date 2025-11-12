@@ -90,6 +90,12 @@
                                     <option value="1.6" {{ (old('motorizacao') ?? $modelo->motorizacao) == '1.6' ? 'selected' : '' }}>1.6</option>
                                     <option value="1.8" {{ (old('motorizacao') ?? $modelo->motorizacao) == '1.8' ? 'selected' : '' }}>1.8</option>
                                     <option value="2.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '2.0' ? 'selected' : '' }}>2.0</option>
+                                    <option value="3.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '3.0' ? 'selected' : '' }}>3.0</option>
+                                    <option value="4.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '4.0' ? 'selected' : '' }}>4.0</option>
+                                    <option value="5.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '5.0' ? 'selected' : '' }}>5.0</option>
+                                    <option value="6.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '6.0' ? 'selected' : '' }}>6.0</option>
+                                    <option value="7.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '7.0' ? 'selected' : '' }}>7.0</option>
+                                    <option value="8.0" {{ (old('motorizacao') ?? $modelo->motorizacao) == '8.0' ? 'selected' : '' }}>8.0</option>
                                 </select>
                                 <label for="motorizacao">Motorização</label>
                                 @error('motorizacao')
