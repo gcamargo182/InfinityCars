@@ -74,3 +74,6 @@ Antes de começar, verifique se possui:
   <img src="public/images/gestaodeveiculos.JPG" width="400"/>
 </p>
 
+---
+
+# Guilherme Camargo Silva e Icaro Bertapeli Carneiro
