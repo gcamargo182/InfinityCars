@@ -76,4 +76,4 @@ Antes de começar, verifique se possui:
 
 ---
 
-# Guilherme Camargo Silva e Icaro Bertapeli Carneiro
+<p align="center"># Guilherme Camargo Silva e Icaro Bertapeli Carneiro</p>
